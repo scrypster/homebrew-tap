@@ -6,19 +6,19 @@ class Muninn < Formula
   on_macos do
     on_arm do
       url "https://github.com/scrypster/muninndb/releases/download/v#{version}/muninn-darwin-arm64"
-      sha256 "7b41ca01159651fc7012b3cabde54a38068be407a76c9f7dc9e70aad2ee47f59"  # darwin-arm64
+      sha256 "e9027e5efb7090aa9881e6fa3217f761d7a9bbfd24b2a7403e0e01e417e76d41"  # darwin-arm64
     end
 
     on_intel do
       url "https://github.com/scrypster/muninndb/releases/download/v#{version}/muninn-darwin-amd64"
-      sha256 "e215d83027a3be9b5e6d42514741f49925549ba4c45d62de6e354910cf3587dd"  # darwin-amd64
+      sha256 "dc630a28989ece0c39c13cc63c4571d789e765e11a471475d292642085b86b1c"  # darwin-amd64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/scrypster/muninndb/releases/download/v#{version}/muninn-linux-amd64"
-      sha256 "3cb8323d4b22d9ecc95d266a63c7ccaacc4b70e7776931333d275242838fdd86"  # linux-amd64
+      sha256 "fce3727b81578cce579b4a14e67134f5c1209d5852eb436895c425bb445d3833"  # linux-amd64
     end
   end
 
