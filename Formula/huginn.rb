@@ -6,22 +6,22 @@ class Huginn < Formula
   on_macos do
     on_arm do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-darwin-arm64"
-      sha256 "1ef01739a34ecedf11482190ac308c3ff64a7bb1f2df220064d5daa0f79451ae"  # darwin-arm64
+      sha256 "e63a032e389ec73cdc337c1d5f61494b2c7d1ddab40b217ac7cc2d678cf09d54"  # darwin-arm64
     end
     on_intel do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-darwin-amd64"
-      sha256 "5727ad2a9e3fe1237c74a66fdbd816ca33c7b243833b75d3d3af00ebc6b6c17f"  # darwin-amd64
+      sha256 "c37783820c18ed64183398f3f0657aa90459f884c55eeaaba8c4f8dbff9671e6"  # darwin-amd64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-linux-amd64"
-      sha256 "f07ca9f9c4b4d61f270e2d0185a4a1893b8226ec431c2f1aceb9ecb3fb3988b7"  # linux-amd64
+      sha256 "061c4fb1895fb14444ef0690cc4e3a15ad8dffce8986d62cf3797434c53804be"  # linux-amd64
     end
     on_arm do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-linux-arm64"
-      sha256 "91d93803b8512bec0f4d42f011b6c3c3dc964320ba0ec7e439fec81bd4894b1b"  # linux-arm64
+      sha256 "bd52e5685467541b61441beccefc9084fd3a8cebd10c601d09e55bcfc4139c05"  # linux-arm64
     end
   end
 
