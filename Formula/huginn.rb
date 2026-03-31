@@ -1,27 +1,27 @@
 class Huginn < Formula
   desc "Local AI agent platform — multi-agent, skills, cloud sync"
   homepage "https://huginn.sh"
-  version "0.1.6-alpha"
+  version "0.1.7-alpha"
 
   on_macos do
     on_arm do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-darwin-arm64"
-      sha256 "07acb253675d2897629bb59742a02399070fcb2c06daa2ed62908833b46663eb"  # darwin-arm64
+      sha256 "75032ba5b89a4e9dbf4897560579aed30e448051ae592f38bc77c0665b390531"  # darwin-arm64
     end
     on_intel do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-darwin-amd64"
-      sha256 "687c9566ecb3b750d096a74fb2b49c00cb308808d5512ca1df2f42d9d486ea32"  # darwin-amd64
+      sha256 "855681660aabdc2f587197a459233c6687949a97e39d4cffd6ccc677a113cebd"  # darwin-amd64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-linux-amd64"
-      sha256 "d6692d9c3e252c590cbc295337851cb6e43167484184d28e71a2ba14e6626837"  # linux-amd64
+      sha256 "d221a9159c74d3d4ed348942503f395334ebb9620c512895f07f242abf0033e0"  # linux-amd64
     end
     on_arm do
       url "https://github.com/scrypster/huginn/releases/download/v#{version}/huginn-linux-arm64"
-      sha256 "ab0305a29568d5850838a4f35c9d5e475e6f2528578c416eceff6c14e907d25b"  # linux-arm64
+      sha256 "1ba2d3e6d4a122b777f41f37952bbdb26a6b703bbbf619741eef65e5dc8f9160"  # linux-arm64
     end
   end
 
