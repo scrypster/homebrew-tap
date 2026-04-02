@@ -1,24 +1,24 @@
 class Muninn < Formula
   desc "Cognitive memory database — MCP-native, single binary"
   homepage "https://muninndb.com"
-  version "0.4.9-alpha"
+  version "0.4.10"
 
   on_macos do
     on_arm do
       url "https://github.com/scrypster/muninndb/releases/download/v#{version}/muninn-darwin-arm64"
-      sha256 "b149d64bd3e75bdeaf8ea6b633f14957bced2bf00178c8dce938b3c9bfbf9918"  # darwin-arm64
+      sha256 "5b97e297a7f7f34fb2671655fa5b56bf4d45efec66a56f81698bde3913dd241d"  # darwin-arm64
     end
 
     on_intel do
       url "https://github.com/scrypster/muninndb/releases/download/v#{version}/muninn-darwin-amd64"
-      sha256 "cdc41d1fca5b8a3a3fd01b1a6f567616ed4e601f5dfd759f280cf992b4649ce0"  # darwin-amd64
+      sha256 "bb8de325601f948ea6610706b94ea0b6044735969445a6f71504095081bd011b"  # darwin-amd64
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/scrypster/muninndb/releases/download/v#{version}/muninn-linux-amd64"
-      sha256 "4e4541b4126b3047a28dc6de1521d5ddc2ad5be6a0cd890b8827565a8ccafed4"  # linux-amd64
+      sha256 "942f9b541064c1990a48b40e1f953f0b18fee8b949da81184abbbc9139df40e0"  # linux-amd64
     end
   end
 
