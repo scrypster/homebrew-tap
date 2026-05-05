@@ -31,6 +31,14 @@ class Huginn < Formula
     bin.install "huginn-#{os}-#{arch}" => "huginn"
   end
 
+  service do
+    run          [opt_bin/"huginn", "serve", "--foreground"]
+    keep_alive   true
+    log_path     var/"log/huginn.log"
+    error_log_path var/"log/huginn.log"
+    working_dir  var
+  end
+
   test do
     assert_match "huginn", shell_output("#{bin}/huginn version")
   end
